@@ -298,15 +298,8 @@
 
   /* --------------------- ABOUT --------------------- */
   .about-grid {
-    display:grid; grid-template-columns: minmax(0, 1fr) minmax(300px, .82fr); gap: clamp(40px, 7vw, 112px);
-    align-items: center;
+    display:grid; grid-template-columns: minmax(0, 1fr);
   }
-  @media (max-width: 900px){ .about-grid { grid-template-columns: 1fr;} }
-  .about-figure { position:relative; margin:0; aspect-ratio: 3/4; background: var(--paper); overflow:hidden;}
-  .about-figure img { width:100%; height:100%; object-fit: cover; }
-  .about-figure::after { content:''; position:absolute; inset:0; border: 1px solid rgba(10,10,10,.14); pointer-events:none; }
-  .about-figure figcaption { position:absolute; z-index:1; right:0; bottom:0; padding:11px 14px; background:var(--black); color:var(--bone); font-family:'JetBrains Mono', monospace; font-size:10px; line-height:1.45; letter-spacing:.05em; text-transform:uppercase; }
-  .about-figure figcaption span { color:var(--yellow); }
 
   .about h2 { font-size: clamp(32px, 4vw, 54px); line-height: 1.05; margin-bottom: 24px;}
   .about p { font-size: 17px; color: var(--ink); margin-bottom: 16px; max-width: 560px;}
@@ -327,6 +320,9 @@
   .cred-icon .ico { width:32px; height:32px; }
   .cred .mono { color: var(--mute); }
   .cred strong { display:block; margin-top: 6px; font-family: 'Space Grotesk', sans-serif; font-size: 18px;}
+  .cred-list { margin: 6px 0 0; padding: 0; list-style: none; font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 600; line-height: 1.45; }
+  .cred-list li { display:flex; align-items:center; justify-content:center; gap: 8px; }
+  .cred-list li::before { content:'•'; color: var(--yellow-deep); }
   .cred.yellow { background: var(--yellow); }
   .cred.yellow:hover { background:#ffcf42; }
 
@@ -680,10 +676,6 @@
         <p class="lede">Jmenuji se Tomáš Hořejší a víc než 9 let se věnuji projekci rodinných domů, rekonstrukcí a přístaveb. Jsem projektant — nestavím, ale starám se o to, aby byl projekt správný, proveditelný a schválený.</p>
         <p>Věřím, že dobrý projekt nestojí na tloušťce šanonu, ale na tom, jak dobře rozumí životu, který se v domě odehrává. Beru si málo zakázek, ale řeším je pečlivě a bez kompromisů.</p>
       </div>
-      <figure class="about-figure reveal delay-2">
-        <img src="assets/about-placeholder-projectant.png" alt="Dočasná ilustrační fotografie projektanta u výkresů" />
-        <figcaption><span>Ilustrační foto</span><br>bude nahrazeno portrétem Tomáše</figcaption>
-      </figure>
     </div>
     <div class="credentials">
       <div class="cred yellow reveal">
@@ -704,7 +696,11 @@
       <div class="cred reveal delay-3">
         <span class="cred-icon"><svg class="ico" viewBox="0 0 32 32"><path d="M7 25 25 7M10 7h15v15M7 10v15h15"/></svg></span>
         <span class="mono">Zaměření</span>
-        <strong>Rodinné domy<br>drobné stavby · pasporty</strong>
+        <ul class="cred-list">
+          <li>Rodinné domy</li>
+          <li>Drobné stavby</li>
+          <li>Pasporty</li>
+        </ul>
       </div>
     </div>
   </div>
