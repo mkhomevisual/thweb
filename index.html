@@ -6,15 +6,15 @@
 <title>Stavební projektant | Ing. Tomáš Hořejší</title>
 <meta name="description" content="Projektová dokumentace rodinných domů, rekonstrukcí a přístaveb. Ing. Tomáš Hořejší zajistí projekt od studie po stavební povolení v celé ČR." />
 <meta name="author" content="Ing. Tomáš Hořejší" />
-<meta name="robots" content="index, follow" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <meta name="theme-color" content="#FFC21C" />
 <meta name="application-name" content="Ing. Tomáš Hořejší — stavební projektant" />
 <link rel="canonical" href="https://projektyhorejsi.cz/" />
-<link rel="icon" href="/favicon.ico" sizes="any" />
-<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
-<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link rel="icon" href="/favicon.ico?v=th-logo" sizes="any" />
+<link rel="icon" href="/favicon.svg?v=th-logo" type="image/svg+xml" />
+<link rel="icon" href="/favicon-32x32.png?v=th-logo" type="image/png" sizes="32x32" />
+<link rel="icon" href="/favicon-16x16.png?v=th-logo" type="image/png" sizes="16x16" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=th-logo" sizes="180x180" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta property="og:locale" content="cs_CZ" />
 <meta property="og:type" content="website" />
@@ -22,8 +22,8 @@
 <meta property="og:title" content="Stavební projektant | Ing. Tomáš Hořejší" />
 <meta property="og:description" content="Projektová dokumentace rodinných domů, rekonstrukcí a přístaveb — od studie po stavební povolení." />
 <meta property="og:url" content="https://projektyhorejsi.cz/" />
-<meta property="og:image" content="https://projektyhorejsi.cz/assets/og-image.png" />
-<meta property="og:image:secure_url" content="https://projektyhorejsi.cz/assets/og-image.png" />
+<meta property="og:image" content="https://projektyhorejsi.cz/assets/og-image.png?v=th-logo" />
+<meta property="og:image:secure_url" content="https://projektyhorejsi.cz/assets/og-image.png?v=th-logo" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -31,36 +31,66 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Stavební projektant | Ing. Tomáš Hořejší" />
 <meta name="twitter:description" content="Projektová dokumentace rodinných domů, rekonstrukcí a přístaveb — od studie po stavební povolení." />
-<meta name="twitter:image" content="https://projektyhorejsi.cz/assets/og-image.png" />
+<meta name="twitter:image" content="https://projektyhorejsi.cz/assets/og-image.png?v=th-logo" />
 <meta name="twitter:image:alt" content="Logo Ing. Tomáše Hořejšího, stavebního projektanta" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "@id": "https://projektyhorejsi.cz/#business",
-  "name": "Ing. Tomáš Hořejší — stavební projektant",
-  "url": "https://projektyhorejsi.cz/",
-  "logo": "https://projektyhorejsi.cz/assets/TH-Logo.png",
-  "image": "https://projektyhorejsi.cz/assets/og-image.png",
-  "description": "Projektová dokumentace rodinných domů, rekonstrukcí a přístaveb od studie po stavební povolení.",
-  "email": "t.horejsi@seznam.cz",
-  "telephone": "+420731923630",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+420731923630",
-    "contactType": "customer service",
-    "availableLanguage": "cs"
-  },
-  "areaServed": {
-    "@type": "Country",
-    "name": "Česká republika"
-  },
-  "serviceType": [
-    "Projektová dokumentace",
-    "Rodinné domy",
-    "Rekonstrukce a přístavby",
-    "Pasport stavby",
-    "Stavební inženýring"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://projektyhorejsi.cz/#website",
+      "url": "https://projektyhorejsi.cz/",
+      "name": "Ing. Tomáš Hořejší — stavební projektant",
+      "inLanguage": "cs-CZ",
+      "publisher": { "@id": "https://projektyhorejsi.cz/#business" }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://projektyhorejsi.cz/#business",
+      "name": "Ing. Tomáš Hořejší — stavební projektant",
+      "url": "https://projektyhorejsi.cz/",
+      "logo": "https://projektyhorejsi.cz/assets/TH-Logo.png",
+      "image": "https://projektyhorejsi.cz/assets/og-image.png?v=th-logo",
+      "description": "Projektová dokumentace rodinných domů, rekonstrukcí a přístaveb od studie po stavební povolení.",
+      "email": "t.horejsi@seznam.cz",
+      "telephone": "+420731923630",
+      "founder": { "@id": "https://projektyhorejsi.cz/#tomas-horejsi" },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+420731923630",
+        "contactType": "customer service",
+        "availableLanguage": "cs"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Česká republika"
+      },
+      "serviceType": [
+        "Projektová dokumentace",
+        "Rodinné domy",
+        "Rekonstrukce a přístavby",
+        "Pasport stavby",
+        "Stavební inženýring"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Projektantské služby",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pasport stavby" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projekt pro stavební povolení" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stavební inženýring" } }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://projektyhorejsi.cz/#tomas-horejsi",
+      "name": "Ing. Tomáš Hořejší",
+      "jobTitle": "Stavební projektant",
+      "worksFor": { "@id": "https://projektyhorejsi.cz/#business" },
+      "knowsAbout": ["Pozemní stavby", "Projektová dokumentace", "Stavební povolení", "Rodinné domy"]
+    }
   ]
 }
 </script>
@@ -282,7 +312,7 @@
     max-width: 240px;
     box-shadow: 8px 8px 0 var(--black);
   }
-  .hero-badge h4 { font-size: 15px; margin-bottom: 4px; }
+  .hero-badge .title { font-family:'Space Grotesk', sans-serif; font-size: 15px; font-weight:600; margin:0 0 4px; }
   .hero-badge p { font-size: 13px; color: var(--black); opacity:.8; }
   @media (max-width: 600px){ .hero-badge { left: 12px; bottom: 12px; box-shadow: 5px 5px 0 var(--black); } }
 
@@ -566,11 +596,28 @@
   footer { background: var(--black); color: rgba(250,250,247,0.6); padding: 56px 0 32px; font-size: 13px;}
   .footer-grid { display:grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; margin-bottom: 48px;}
   @media (max-width: 760px){ .footer-grid { grid-template-columns: 1fr 1fr;} }
-  .footer-col h5 { color: var(--bone); font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing:.1em; text-transform: uppercase; font-weight:500; margin-bottom: 16px;}
+  .footer-heading { color: var(--bone); font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing:.1em; text-transform: uppercase; font-weight:500; margin: 0 0 16px;}
   .footer-col a { display:block; padding: 4px 0; color: rgba(250,250,247,0.6);}
   .footer-col a:hover { color: var(--yellow); }
   .footer-brand p { margin-top: 16px; max-width: 300px; }
   .footer-bottom { display:flex; justify-content: space-between; align-items:center; padding-top: 24px; border-top: 1px solid rgba(250,250,247,0.1); flex-wrap: wrap; gap: 12px;}
+
+  /* --------------------- BACK TO TOP --------------------- */
+  .back-to-top {
+    position: fixed; right: clamp(16px, 3vw, 32px); bottom: clamp(16px, 3vw, 32px); z-index: 45;
+    width: 52px; height: 52px; padding: 0;
+    display: grid; place-items: center;
+    border: 1.5px solid var(--black); background: var(--yellow); color: var(--black);
+    cursor: pointer; box-shadow: 4px 4px 0 var(--black);
+    opacity: 0; visibility: hidden; transform: translateY(14px);
+    pointer-events: none;
+    transition: opacity .2s ease, visibility .2s ease, transform .2s ease, background .2s ease, box-shadow .2s ease;
+  }
+  .back-to-top.is-visible { opacity: 1; visibility: visible; transform: none; pointer-events: auto; }
+  .back-to-top:hover { background: var(--black); color: var(--yellow); box-shadow: 2px 2px 0 var(--yellow); transform: translate(2px, 2px); }
+  .back-to-top:focus-visible { outline: 3px solid var(--bone); outline-offset: 3px; }
+  .back-to-top .ico { width: 22px; height: 22px; }
+  @media (max-width: 760px){ .back-to-top { width: 48px; height: 48px; right: 16px; bottom: 16px; } }
 
   /* --------------------- TWEAKS panel --------------------- */
   #tweaks {
@@ -583,7 +630,7 @@
     box-shadow: 8px 8px 0 var(--yellow);
   }
   #tweaks.show { display: block; }
-  #tweaks h6 { margin:0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing:.1em; text-transform: uppercase; color: var(--yellow); font-weight: 500;}
+  .tweaks-title { margin:0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing:.1em; text-transform: uppercase; color: var(--yellow); font-weight: 500;}
   .tw-row { display:flex; justify-content:space-between; align-items:center; padding: 10px 0; border-top: 1px dashed rgba(250,250,247,0.2); }
   .tw-row:first-of-type { border-top: none; }
   .tw-opts { display:flex; gap: 6px; }
@@ -617,6 +664,7 @@
     </a>
     <nav class="nav-links" aria-label="Hlavní">
       <a href="#sluzby">Služby</a>
+      <a href="#o-mne">O mně</a>
       <a href="#postup">Postup</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
@@ -627,6 +675,7 @@
   </div>
 </header>
 
+<main>
 <!-- ============ HERO ============ -->
 <section class="hero" id="hero">
   <div class="container">
@@ -654,10 +703,10 @@
           <span class="corner tr"></span>
           <span class="corner bl"></span>
           <span class="corner br"></span>
-          <img class="hero-image" src="assets/hero-technical-house.png" alt="Technický výkres prolínající se s realizací moderního rodinného domu" />
+          <img class="hero-image" src="assets/hero-technical-house.png" alt="Technický výkres prolínající se s realizací moderního rodinného domu" width="1122" height="1402" fetchpriority="high" decoding="async" />
         </div>
         <div class="hero-badge">
-          <h4>Projektová dokumentace</h4>
+          <p class="title">Projektová dokumentace</p>
           <p>Od studie po stavební povolení</p>
         </div>
       </div>
@@ -779,19 +828,19 @@
     <div class="steps">
       <div class="step reveal delay-1">
         <span class="n">01</span>
-        <h4>Konzultace</h4>
+        <h3>Konzultace</h3>
         <p>Nezávazná schůzka, projdeme pozemek a vaše představy. Navrhnu realistický postup.</p>
         <span class="dur">~ 1 schůzka</span>
       </div>
       <div class="step reveal delay-2">
         <span class="n">02</span>
-        <h4>Studie</h4>
+        <h3>Studie</h3>
         <p>Dispoziční a objemová studie. Několik variant — vyberete tu svou, dopracujeme detaily.</p>
         <span class="dur">4–6 týdnů</span>
       </div>
       <div class="step reveal delay-3">
         <span class="n">03</span>
-        <h4>Povolení</h4>
+        <h3>Povolení</h3>
         <p>Projekt pro stavební povolení, získání stanovisek a zastupování na úřadech. Předávám kompletní povolení stavby.</p>
         <span class="dur">3–6 měsíců</span>
       </div>
@@ -823,6 +872,8 @@
   </div>
 </section>
 
+</main>
+
 <!-- ============ FOOTER ============ -->
 <footer>
   <div class="container">
@@ -835,18 +886,19 @@
         <p>Projekce a inženýring staveb. Rodinné domy, rekonstrukce, přístavby. Nestavím — projektuji.</p>
       </div>
       <div class="footer-col">
-        <h5>Navigace</h5>
+        <p class="footer-heading">Navigace</p>
         <a href="#sluzby">Služby</a>
+        <a href="#o-mne">O mně</a>
         <a href="#postup">Postup</a>
         <a href="#kontakt">Kontakt</a>
       </div>
       <div class="footer-col">
-        <h5>Kontakt</h5>
+        <p class="footer-heading">Kontakt</p>
         <a href="mailto:t.horejsi@seznam.cz">t.horejsi@seznam.cz</a>
         <a href="tel:+420731923630">+420 731 923 630</a>
       </div>
       <div class="footer-col">
-        <h5>Údaje</h5>
+        <p class="footer-heading">Údaje</p>
         <span>IČ 06004580</span>
       </div>
     </div>
@@ -857,9 +909,13 @@
   </div>
 </footer>
 
+<button class="back-to-top" type="button" aria-label="Zpět nahoru" title="Zpět nahoru">
+  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
 <!-- ============ TWEAKS ============ -->
 <div id="tweaks" role="region" aria-label="Tweaks">
-  <h6>Tweaks</h6>
+  <p class="tweaks-title">Tweaks</p>
   <div class="tw-row">
     <span>Akcent</span>
     <div class="tw-opts" id="tw-accent">
@@ -972,6 +1028,49 @@
     nav.querySelectorAll('.nav-links a, .nav-cta').forEach(a => {
       a.addEventListener('click', () => nav.classList.remove('open'));
     });
+  })();
+
+  // Back to top: on desktop it appears only by the footer; on smaller screens after a useful amount of scrolling.
+  (function(){
+    const button = document.querySelector('.back-to-top');
+    const footer = document.querySelector('footer');
+    if (!button || !footer) return;
+
+    const desktop = window.matchMedia('(min-width: 761px)');
+    const setVisible = (visible) => button.classList.toggle('is-visible', visible);
+    let footerObserver;
+    let observeFooter = false;
+
+    const updateFromScroll = () => {
+      if (observeFooter) return;
+      const threshold = desktop.matches
+        ? document.documentElement.scrollHeight - footer.offsetHeight - window.innerHeight
+        : Math.min(480, window.innerHeight);
+      setVisible(window.scrollY > threshold);
+    };
+
+    function updateMode(){
+      if (footerObserver) footerObserver.disconnect();
+      if (desktop.matches && 'IntersectionObserver' in window) {
+        observeFooter = true;
+        setVisible(false);
+        footerObserver = new IntersectionObserver(entries => {
+          setVisible(entries.some(entry => entry.isIntersecting));
+        }, { threshold: 0.06 });
+        footerObserver.observe(footer);
+      } else {
+        observeFooter = false;
+        updateFromScroll();
+      }
+    }
+
+    window.addEventListener('scroll', updateFromScroll, { passive: true });
+    desktop.addEventListener('change', updateMode);
+    updateMode();
+    button.addEventListener('click', () => window.scrollTo({
+      top: 0,
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+    }));
   })();
 </script>
 </body>

@@ -3,12 +3,12 @@
   "short_name": "Tomáš Hořejší",
   "icons": [
     {
-      "src": "/assets/icon-192x192.png",
+      "src": "/assets/icon-192x192.png?v=th-logo",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/assets/icon-512x512.png",
+      "src": "/assets/icon-512x512.png?v=th-logo",
       "sizes": "512x512",
       "type": "image/png"
     }
